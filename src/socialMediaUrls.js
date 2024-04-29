@@ -33,7 +33,7 @@ async function populateSocialMediaUrls() {
       avatar: userData.avatar,
       name: userData.name,
       designation: userData.designation,
-      phone: userData.phone,
+      phone: userData.phone ? `tel:${userData.phone}` : '',
       whatsapp: userData.whatsapp,
       website: userData.website,
       facebook: userData.facebook,
@@ -42,7 +42,7 @@ async function populateSocialMediaUrls() {
       linkedin: userData.linkedin,
       googleReviews: userData.google_reviews,
       paytm: userData.paytm,
-      email: userData.email,
+      email: userData.email ? `mailto:${userData.email}` : '',
       maps: userData.maps,
       backgroundImage: userData.background_image
     };
@@ -51,6 +51,8 @@ async function populateSocialMediaUrls() {
     // Handle error or return default values
     return null;
   }
+
+
 }
 
 const socialMediaUrls = await populateSocialMediaUrls();
