@@ -1,0 +1,23 @@
+create table
+  public.social_media_data (
+    id serial,
+    card_background_image text null,
+    avatar text null,
+    name text null,
+    designation text null,
+    phone text null,
+    whatsapp text null,
+    website text null,
+    facebook text null,
+    instagram text null,
+    youtube text null,
+    linkedin text null,
+    google_reviews text null,
+    paytm text null,
+    email text null,
+    maps text null,
+    background_image text null,
+    constraint social_media_data_pkey primary key (id)
+  ) tablespace pg_default;
+
+  
