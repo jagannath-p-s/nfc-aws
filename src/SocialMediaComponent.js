@@ -16,6 +16,7 @@ import Gallery from './images/gallery.png';
 import Mapicon from './images/mapicon.svg';
 import supabase from './supabase';
 
+
 const openURL = async (url, linkType, socialMediaDataId) => {
   try {
     // Insert the click data into the link_clicks table
