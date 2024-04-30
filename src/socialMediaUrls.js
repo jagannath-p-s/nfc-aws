@@ -21,8 +21,13 @@ const extractUserIdFromURL = () => {
   const url = window.location.pathname;
   const segments = url.split('/');
   const userId = segments[segments.length - 1];
+  // Check if userId is empty or not a number
+  if (!userId || isNaN(userId)) {
+    return 1; // Default userId to 1 if not provided or not a number
+  }
   return userId;
 };
+
 
 async function populateSocialMediaUrls() {
   const userId = extractUserIdFromURL();
