@@ -110,8 +110,8 @@ const SocialMediaComponent = () => {
         </Wrapper>
       )}
       {socialMediaUrls.maps && (
-        <Wrapper onClick={() => openURL(socialMediaUrls.maps, 'gallery', socialMediaDataId)}>
-          <Image src={Gallery} alt="Maps" height={60} />
+        <Wrapper onClick={() => openURL(socialMediaUrls.drive, 'gallery', socialMediaDataId)}>
+          <Image src={Gallery} alt="Gallery" height={60} />
         </Wrapper>
       )}
     </Sociallinks>
