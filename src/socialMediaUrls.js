@@ -49,7 +49,8 @@ async function populateSocialMediaUrls() {
       paytm: userData.paytm,
       email: userData.email ? `mailto:${userData.email}` : '',
       maps: userData.maps,
-      backgroundImage: userData.background_image
+      backgroundImage: userData.background_image,
+      drive:drive_link
     };
     return socialMediaUrls;
   } else {
