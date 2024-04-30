@@ -50,7 +50,7 @@ async function populateSocialMediaUrls() {
       email: userData.email ? `mailto:${userData.email}` : '',
       maps: userData.maps,
       backgroundImage: userData.background_image,
-      drive:drive_link
+      drive:userData.drive_link
     };
     return socialMediaUrls;
   } else {
