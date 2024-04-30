@@ -2,8 +2,8 @@ import socialMediaUrls from './socialMediaUrls'; // Import socialMediaUrls objec
 
 export function generateVCard() {
     const name = socialMediaUrls.name; // Use name from socialMediaUrls
-    let phone = socialMediaUrls.phone; // Initialize phone number with default value
-    let email = socialMediaUrls.email; // Initialize email with default value
+    let phone = socialMediaUrls.phone ? socialMediaUrls.phone.replace(/^tel:/, '') : ''; // Remove "tel:" prefix from phone number if present
+    let email = socialMediaUrls.email ? socialMediaUrls.email.replace(/^mailto:/, '') : ''; // Remove "mailto:" prefix from email if present
 
     // Extract phone number from the provided links
     const phoneRegex = /tel:(\+\d+)/;
