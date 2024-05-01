@@ -34,7 +34,6 @@ async function populateSocialMediaUrls() {
   const userData = await fetchSocialMediaUserData(userId);
   if (userData) {
     const socialMediaUrls = {
-      cardbackgroundImage: userData.card_background_image,
       avatar: userData.avatar,
       name: userData.name,
       designation: userData.designation,

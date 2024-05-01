@@ -9,22 +9,29 @@ const Main = styled.main`
 `;
 
 const ProfileAvatar = styled.img`
+
     width: 110px;
     height: 110px;
     border-radius: 50%;
     margin: -50px auto 0;
     border: 1px solid #626262;
     object-fit: cover;
+  
+    
 `;
 
 const ProfileCard = styled.div`
     text-align: center;
     width: 100%;
-    max-height: 150px;
+    height: 200px; /* Set the height to 200px */
+    max-height: 150px; /* You can adjust this as needed */
     overflow: hidden;
     margin: 0 auto;
     border-radius: 0 0 20px 20px;
 `;
+
+export default ProfileCard;
+
 
 const ProfileImage = styled.div`
     position: relative;
@@ -32,6 +39,7 @@ const ProfileImage = styled.div`
 `;
 
 const ContentCard = styled.div`
+
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -41,7 +49,9 @@ const ContentCard = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 10px;
+    max-width:60%:
+    top:200px;
+    
 `;
 
 const ProfileDetails = styled.div`
